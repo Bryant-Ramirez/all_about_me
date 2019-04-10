@@ -3,21 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Me!</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
   </head>
   <body>
     <nav>
-      <a href="index.html"> Back to Home</a>
+    <ul>
+      <li><a href="index.html"> Home!</a></li>
+      <li><a class="active" href="contact.html"> Contact Me!</a></li>
+   </ul>
+ </nav>
+ <main>
     <h1>Use this form Contact me!</h1>
     <form action="https://formspree.io/bryant.ramirez91@gmail.com"
           method="POST"
+    >
       <div>
         <label for="name">Your Name</label>
-        <input type="text" name="your name" value="" autocomplete="off">
+        <input type="text" name="yourname" autocomplete="off">
       </div>
       <div>
-        <label for="your message">Your Message</label>
+        <label for="message">Your Message</label>
         <textarea
-         name="your message"
+         name="yourmessage"
          rows="10"
          cols="100"
        >
@@ -26,5 +35,6 @@
      <button type="submit">Send</button>
      <input type="reset">
     </form>
+  </main>
   </body>
 </html>
